@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: https://ok_site.com/
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Referrer-Policy:
+      - no-referrer
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 15 Nov 2017 21:57:01 GMT
+- request:
+    method: head
+    uri: https://ko_site.com/
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+  response:
+    status:
+      code: 503
+    headers:
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 15 Nov 2017 21:57:02 GMT
+recorded_with: VCR 3.0.3
