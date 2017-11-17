@@ -1,6 +1,6 @@
-require "http_status_checker/version"
-require "http_status_checker/configuration"
-require "http_status_checker/client"
+require 'http_status_checker/version'
+require 'http_status_checker/configuration'
+require 'http_status_checker/client'
 
 module HttpStatusChecker
   extend Configuration
@@ -14,7 +14,7 @@ module HttpStatusChecker
     client.send(method, *args, &block)
   end
 
-  def self.respond_to_missing(method_name, include_private=false)
+  def self.respond_to_missing?(method_name)
     client.respond_to?(method_name) || super
   end
 end
