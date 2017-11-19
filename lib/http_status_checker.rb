@@ -1,6 +1,7 @@
 require 'http_status_checker/version'
 require 'http_status_checker/configuration'
 require 'http_status_checker/client'
+require 'http_status_checker/cli'
 
 module HttpStatusChecker
   extend Configuration
